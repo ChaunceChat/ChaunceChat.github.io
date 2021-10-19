@@ -136,6 +136,7 @@ $(".server_list").on("dblclick", "li", function () {
 
 $(".server_list_chats").on("click", "li", function () {
   chatSelected = $(this).find("#chat_name").text();
+  $(".chat_window").empty();
   rtdb.get(serverRef).then((snapshot) => {
     $(".server_list_chats").empty();
     snapshot.forEach((childSnapshot) => {
