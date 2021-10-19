@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ChaunceChat</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div data-page="content" id="display">
+</div>
+
+<!-------- Name Box--------->
+
+<div class="login_Section">
+  <div class=login_background>
+    <div id="clock" class=hidden></div>
+    <p id="Login_welcome_message">Welcome to Chaunce Chat</p>
+    <p id="login_text">Login / Create Account</p>
+    <input type="text" id="name_box" placeholder="Username" autocomplete="off">
+    <input type="password" id="pass_box" placeholder="Password">
+    <input type="button" id="name_box_button" value="Login"><!-- make this hidden first-->
+    <!--Delete this later and uncomment line in login fucntion-->
+    <!--     <input type="text" id="name_box" placeholder="Username" autocomplete="off">
+    <input type="password" id="pass_box" placeholder="Password">
+    <input type="button" id="name_box_button" value="Login"> -->
+    <!-- to here-->
+  </div>
+</div>
+
+<!-------- Server List--------->
+<div id="Chat_UI" class="hidden">
+  <div class=server_header>
+    <p id=server_text>Servers</p>
+    <input type="button" id="new_server_button" value="New Server">
+    <p id=server_text_chat>chats</p>
+  </div>
+  <ul class=server_list>
+
+    <div class="server_spacer"> </div>
+    <li id=Server><a>Server 1</a> </li>
+    <li id=Server><a>Server 2</a> </li>
+  </ul>
+  <ul class=server_list_chats>
+  </ul>
+  <!-------- Profiles List--------->
+
+  <div>
+
+    <ul class=profile_list>
+
+    </ul>
+    <p id=profile_list_text>Users</p>
+  </div>
+  <!-------- Chat Window--------->
+  <!--   <div class=chat_section> -->
+  <canvas></canvas>
+  <div class=chat_window_spacer></div>
+  <ol class=chat_window>
+
+  </ol>
+  <!--     <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> -->
+  <!-------- Message Box--------->
+  <div class="spacer"> </div>
+  <div class="Message_Box">
+    <input id="text_box" type="email" placeholder="Enter your message" autocomplete="off"></input>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
